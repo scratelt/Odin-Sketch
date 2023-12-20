@@ -1,1 +1,93 @@
-/* CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: rgb(48, 56, 65);
+    width: 800px;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+}
+
+.navbar {
+    padding: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn, input {
+    height: 35px;
+    padding: 0 1em;
+}
+
+.color {
+    padding: 0 .25em;
+    width: 100px;
+    margin: 0 1em;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+}
+
+.grid-item {
+    padding: 1px;
+    border: 1px solid #ccc;
+    text-align: center;
+    height: 10px;
+    width: 10px;
+}
+
+.container {
+    grid-template-columns: repeat(var(--columns, 4), 1fr); /* Default to 4 columns */
+    justify-content: center;
+    padding: 10px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    background-color: rgb(48, 56, 65);
+}
+
+#rangeValue {
+    color: white;
+    text-align: center;
+}
+
+
+.vertical-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 150px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.left {
+    left: 0;
+    writing-mode: vertical-lr;
+}
+
+.right {
+    right: 0;
+    writing-mode: vertical-lr;
+    transform-origin: bottom;
+}

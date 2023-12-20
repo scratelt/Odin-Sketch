@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="vertical-text left">Etch-a-sketch</div>
+    <div class="navbar">
+        <button class="btn">Reset</button>
+        <input type="color" value="#00eeff" class="color">
+        <div class="slider">
+            <input type="range" min="8" max="50" value="18" oninput="updateGridSize(this.value)">
+            <p id="rangeValue">8</p>
+        </div>
+    </div>
+    <div class="container"></div>
+    <div class="vertical-text right">Etch-a-sketch</div>
     <script src="script.js"></script>
 </body>
 </html>
